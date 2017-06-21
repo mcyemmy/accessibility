@@ -8,6 +8,8 @@
     height: .8em;
     margin-top: 1.4em;
     margin-bottom: -1em;
+    padding: 2px;
+    margin-left: 50px;
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: contain;
