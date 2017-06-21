@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US">
+  <head>
+    <title> Demo - Keyboard Accessible Navigation menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Keyboard Accessibility</h1>
+    <p>This is a demonstration of a Keyboard Accessible Navigation menu for the disabled user. I implemented this using semantic markup, role attributes, aria attributes and tabindex. Tab to the button and 
+    press Enter key</p>
+    <!-- Make button untabable and use js to make P remain hidden to screen reader -->
+    <button>Nav Menu instruction here</button>
+    <p hidden>
+      This instruction helps you navigate this web app page. To view the navigation menu for 
+      this page, tab to the menu icon below, then press Enter on the menu Icon (button) to 
+      view the nav list. Tab to the first child on the menu list, <strong>then use your 
+      keyboard up and down arrow key to move between the nav links</strong>.
+      <br />
+      You can press the Enter key on the nav links to visit their landing page and can 
+      return to this app page by pressing the Alt key + left arrow.
+      <br />
+      Javascript(JQuery) and CSS for this web app are to the left of this panel for you to 
+      review. I can further explain this initiative at the interview. Thanks for viewing.
+    </p>
+    
+    
+    
+    <!-- Use image data uri as Navigation menu button -->
+    <div class="menu-button" role="button" aria-label="show menu" tabindex="0"></div> 
+    
+    <!-- Navigation Menu -->
+    <nav class="nav-menu" hidden>
+      <ul role="navigation" aria-label="menu list">
+        <li><a href="//kaiserpermanente.org">KP Home</a></li>
+        <li><a href="//healthy.kaiserpermanente.org/why-kp">Why KP</a></li>
+        <li><a href="//healthy.kaiserpermanente.org/shop-plans">Shop Plans</a></li>
+        <li><a href="//healthy.kaiserpermanente.org/care/doctors-locations/#/selectregion">Doctors</a></li>
+        <li><a href="//healthy.kaiserpermanente.org/new-members/register-to-kp-org">New Members</a></li>
+      </ul>
+    </nav>
+    
+    <script src="script.js"></script>
+    </body>
+
+</html>

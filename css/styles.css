@@ -1,0 +1,36 @@
+/* Styles go here */
+
+*[hidden] {
+  display:none;
+}
+.menu-button {
+    width: .8em;
+    height: .8em;
+    margin-top: 1.4em;
+    margin-bottom: -1em;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABkCAMAAACCTv/3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRFAAAA5ubmSUUG+gAAAAJ0Uk5T/wDltzBKAAAAPklEQVR42uzYQQ0AAAgDseHfNC4IyVoD912WAACUm3uampqampqamq+aAAD+IVtTU1NTU1NT0z8EAFBsBRgAX+kR+Qam138AAAAASUVORK5CYII=);
+}
+.nav-menu ul {
+  list-style: none;
+  border: 1px solid;
+  max-width: 7em;
+  background: #000;
+  padding-left: 0;
+}
+.nav-menu li {
+  padding: .3em;
+  text-align: left;
+}
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav-menu li:hover {
+  background-color: #fff;
+}
+.nav-menu li:hover a {
+  color: #333;
+}
